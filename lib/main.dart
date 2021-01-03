@@ -20,7 +20,19 @@ class HomePage extends StatelessWidget {
         ),
         body: Center(
           child: Container(
-            child: Text("Hi Flutter"),
+            alignment: Alignment.center,
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+                color: Colors.amberAccent,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    blurRadius: 5,
+                  )
+                ],
+                borderRadius: BorderRadius.circular(20)),
+            child: Text("I am a box"),
           ),
         ),
       ),
